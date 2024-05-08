@@ -160,7 +160,24 @@ card01 {
 
 
 /* footer */
-   footer {
+
+.contact-container{
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e5e5e5;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contact-container p{
+    align-self: center;
+}
+.contact-upper{
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+footer {
     background-color: #f0f0f0;
     text-align: center;
     padding: 20px 0;
@@ -174,6 +191,7 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+
 
   
 
