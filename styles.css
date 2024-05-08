@@ -1,12 +1,12 @@
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: sans-serif
+    font-family: sans-serif;
+    scroll-snap-type: y mandatory;
 }
 
 body {
     margin: 0;
-    
 }
 
 
@@ -233,6 +233,11 @@ footer p {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
 }
+
+section {
+    scroll-snap-align: start;
+}
+/* height: 100vh; /* Set the height of each section to the viewport height  */
 
 audio,canvas,progress,video {
     vertical-align: baseline;
@@ -462,7 +467,7 @@ body {
 
 }
 body::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 img {
@@ -6328,7 +6333,7 @@ blockquote {
     border: 1px solid #cecece;
     border-radius: .5rem;
     padding: .3em;
-    font-size: .9rem
+    font-size: .9rem;
 }
 
 .menu {
@@ -12708,6 +12713,10 @@ blockquote {
 }
 .scrolled {
     background-color: white /* Change to desired background color */
+}
+
+.section-scroll {
+    scroll-snap-align: start;
 }
 
 /* -content
