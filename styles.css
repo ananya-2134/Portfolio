@@ -5,8 +5,212 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    
 }
+
+
+
+card01 {
+    background-image: url('images/img_forest.jpg');
+    background-size: cover; /* or contain depending on your preference */
+    background-position: center;
+    backdrop-filter: blur(5px);
+  }
+
+/* Set default background color for menu links */
+.menu_link {
+    background-color: transparent; /* Set default background color */
+  }
+  
+  /* Set black background color for active menu link */
+  .menu_link.w--current {
+    background-color: black; /* Set background color for active link */
+  }
+  
+  /* Set hover background color for menu links */
+  .menu_link:hover {
+    background-color: #333; /* Set hover background color */
+  }
+/* Chatgpt  */
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 1em;
+    color: #fff;
+    padding: 2.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transition: right 0.1s ease; Adjust the transition timing as needed */
+    z-index: 5; /* Ensure the card body is above the card */
+}
+
+.card01:hover .card-body {
+    right: 0;
+    transition: right 1.5s ease;
+}
+.card01 {
+    /* Your existing styles */
+    position: relative; /* Ensure relative positioning for absolute positioned children */
+}
+
+.card01.is-design {
+    /* Your existing styles */
+    background-size: cover; /* Add this line to make the background image cover */
+}
+.card-body h1 {
+    
+     /* Add margin from the top */
+    margin-top: -0px;
+    margin-bottom: 10px; /* Add margin from the bottom */
+    margin-left: 20px; /* Add left margin */
+    margin-right: 5px; /* Add right margin */
+    position: relative;
+    z-index: 2;
+}
+
+.card-body p {
+    margin-top: 10px; /* Add margin from the top */
+    margin-left: 20px; /* Add left margin */
+    margin-right: 5px; /* Add right margin */
+}
+
+/* horizontal cards end */
+/* verticals cards  */
+.two-three-card {
+    position: relative;
+    width: 100%;
+    padding-top: 150%; /* 2:3 aspect ratio */
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    overflow: hidden;
+
+    
+    /*
+    flex: 1;
+    margin-right: 10px; 
+    max-width: 200px;  */
+    
+  }
+  
+  .two-three-card .card-body {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 1em;
+    color: #fff;
+    padding: 2.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    /* transition: right 1.5s ease; */
+
+
+    /* padding: 1em;  */
+  }
+  
+  .two-three-card:hover .card-body {
+    transition: right 1.5s ease;
+    right: 0;
+  }
+  
+  .two-three-card .card-title {
+    margin-top: -0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+
+
+    /* font-size: 1.2em; */
+  }
+  
+  .two-three-card .card-subtitle {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+
+
+    /* font-size: 1em; */
+  }
+
+
+  /* .two-three-card:last-child {
+    margin-right: 0;
+  }
+  .container-cards{
+    display: flex;
+  }
+   */
+
+
+
+
+/* footer */
+   footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+  
+
+/* contact me */
+/* Styles for the button */
+.button-wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* snap scrolling */
+
+
+
+
+
+
+
+
+
+  
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
@@ -242,9 +446,7 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-.scrolled {
-    background-color: black /* Change to desired background color */
-}
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -2409,7 +2611,7 @@ blockquote {
 }
 
 .is-pad-b-128 {
-    padding-bottom: 8em
+    padding-bottom: 4em   /*  8em thi */
 }
 
 .is-pad-tb-16 {
@@ -4746,83 +4948,7 @@ blockquote {
     overflow: hidden
 }
 
-.card01:hover {
-    background-color: #282a2b;
-    background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/646b60851af1367e7cc92e4f_hover-design.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain
-}
 
-.card01.is-consulting {
-    z-index: 10;
-    color: #b9b9b9;
-    border-color: #b4b4b3;
-    padding: 2.5em;
-    transition: all .4s
-}
-
-.card01.is-consulting:hover {
-    color: var(--orange);
-    background-color: #ddd;
-    background-image: none;
-    border-color: rgba(71,84,103,.05);
-    box-shadow: 0 20px 20px -10px #d4d4d4
-}
-
-.card01.is-design {
-    z-index: 10;
-    color: #b9b9b9;
-    border-color: #b4b4b3;
-    padding: 2.5em;
-    transition: all .4s
-}
-
-.card01.is-design:hover {
-    color: var(--orange);
-    background-color: #ddd;
-    background-image: none;
-    border-color: rgba(71,84,103,.05);
-    box-shadow: 0 20px 20px -10px #d4d4d4
-}
-
-.card01.is-dev {
-    z-index: 10;
-    color: #b9b9b9;
-    border-color: #b4b4b3;
-    border-right-style: solid;
-    padding: 2.5em;
-    transition: all .4s
-}
-
-.card01.is-dev:hover {
-    color: var(--orange);
-    background-color: #ddd;
-    background-image: none;
-    border-color: rgba(71,84,103,.05);
-    padding: 2.5em;
-    box-shadow: 0 20px 20px -10px #d4d4d4
-}
-
-.card01.is-retainer {
-    z-index: 20;
-    min-height: 15.5em;
-    color: #b9b9b9;
-    border-color: #b4b4b3;
-    justify-content: space-between;
-    padding: 2.5em;
-    transition: all .4s;
-    display: flex;
-    overflow: visible
-}
-
-.card01.is-retainer:hover {
-    color: var(--orange);
-    background-color: #ddd;
-    background-image: none;
-    border-color: rgba(71,84,103,.05);
-    box-shadow: 0 20px 20px -10px #d4d4d4
-}
 
 .content01_img {
     object-fit: cover
@@ -7527,7 +7653,8 @@ blockquote {
 .ui-bar-icon-center:hover {
     opacity: 1;
     color: var(--orange);
-    background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ce14bea49251a39a768a_center-hover.svg)
+    /* background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ce14bea49251a39a768a_center-hover.svg)
+ */
 }
 
 .ui-bar-icon-center.w--redirected-checked {
@@ -12561,3 +12688,21 @@ blockquote {
     font-style: normal;
     font-display: swap;
 }
+.scrolled {
+    background-color: white /* Change to desired background color */
+}
+
+/* -content
+Fonts ki url change krni h
+contact form change krna h
+images hatani h -2 bachi h         done          
+orange color change krna h
+naam k niche wale text ko darkk color dena h      done
+navbar me jo selected h usse black background dena h
+web3
+cards dalne h                done
+classes ke naam change krna h
+analytics   
+personal work or internship k cards alag dene h       done
+app dev k cards dene h                 done
+snapscrolling dena h */
