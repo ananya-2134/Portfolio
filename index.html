@@ -684,7 +684,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#contact" class=" btn-prm--med w-button">Contact</a>
+                    <a href="#contact" id='contactinjected' class=" btn-prm--med w-button">Contact</a>
                     `;
                     nav.innerHTML = innerHTML;
                     overlay.appendChild(nav);
@@ -699,6 +699,14 @@
                           overlay.innerHTML = '';
                       });
                   });
+                  document.getElementById('contactinjected').addEventListener('click', () => {
+                    // Log "Hello" to the console when the Contact anchor tag is clicked
+                    targetDiv.classList.remove('w--open');
+                    targetDiv.setAttribute('aria-expanded', 'false');
+                    let overlay = document.getElementById('w-nav-overlay-0');
+                    overlay.style.display = 'none';
+                    overlay.innerHTML = '';
+                });
 
                 } else {
                   targetDiv.classList.remove('w--open');
