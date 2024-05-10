@@ -130,8 +130,6 @@ body {
   background-position: center;
   border-radius: 1em;
   overflow: hidden;
-
-  
   /*
   flex: 1;
   margin-right: 10px; 
@@ -195,6 +193,26 @@ body {
 }
  */
 
+ @media screen and (max-width: 479px) {
+  .w-layout-grid.grid--4-4-4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .two-three-card {
+    width: 100%;
+    margin-bottom: 20px; /* Optional: Add some spacing between the cards */
+  }
+/* 
+  .two-three-card .card-body {
+    width: auto; 
+    height: auto; 
+    padding: 1em; 
+  }
+  .two-three-card:hover .card-body {
+    right: 0;
+  } */
+}
 
 
 
@@ -340,8 +358,11 @@ section {
 
 @media screen and (max-width: 480px) {
   .box {
-    padding: 0.75rem; /* Further adjust padding for smaller screens */
+    /* padding: 0.75rem; Further adjust padding for smaller screens */
   }
+  /* .section{
+    height: 90vh;
+  } */
  
 }
 
@@ -354,7 +375,7 @@ section {
 
 .box h1 {
   font-size: 2rem; /* Adjust font size for headings */
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .box p {
@@ -374,6 +395,8 @@ section {
 
   .box h1, .box p, .box button {
     margin-bottom: 1rem; /* Add margin between items */
+    text-align: center;
+    margin: .6rem .5rem;
   }
  
 }
@@ -9480,8 +9503,10 @@ blockquote {
 }
 
 .about-img-right.is-2 {
-  width: 15em;
-  height: 15em;
+  width: 25em;
+  height: 25em;
+  /* margin-left: 10em; */
+  /* margin-right: 3em; */
   /* background-image: url("https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/649b56a88a7e1003684d93ec_about-img-2%20(1)%20(1).webp")*/
   background-image: url('images/avataaars\ \(4\).svg');
   background-color: #5689e9;
@@ -9532,8 +9557,8 @@ blockquote {
   z-index: 2;
   /* width: 35em;
   height: 30em; */
-  width: 15em;
-  height: 15em;
+  width: 25em;
+  height: 25em;
   /* background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/64ac347bfee2a9965811203f_about-img-hero.webp); */
   background-image: url('images/avataaars\ \(4\).svg');
   background-position: 100% 0;
@@ -11490,15 +11515,18 @@ blockquote {
   }
 
   .about-img-right.is-2 {
-      width: 33em;
-      height: 30em;
-      background-position: 100% 0
+      width: 25em;
+      height: 25em;
+      background-position: 100% 0;
+      margin-right: 3em;
   }
 
   .about-img-home {
-      width: 33em;
-      height: 31em;
-      background-position: 100% 0
+      display: flex;
+      width: 25em;
+      height: 25em;
+      background-position: 100% 0;
+      margin-left: 4em;
   }
 
   .home_headline-wrap {
