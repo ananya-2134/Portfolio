@@ -664,7 +664,7 @@
                     nav.setAttribute('style', 'transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;');
                     nav.setAttribute('data-nav-menu-open', '');
                     let innerHTML = `
-                    <div class="menu_wrap">
+                    <div class="menu_wrap" id="injected">
                         <div class="menu">
                             <a href="#home" aria-current="page" class="menu_link w-inline-block w--current"
                                 style="pointer-events: auto;">
@@ -689,12 +689,24 @@
                     nav.innerHTML = innerHTML;
                     overlay.appendChild(nav);
 
+                    document.querySelectorAll('#injected a').forEach(link => {
+                      link.addEventListener('click', () => {
+                          // Log "Hello" to the console when any anchor tag is clicked
+                          targetDiv.classList.remove('w--open');
+                          targetDiv.setAttribute('aria-expanded', 'false');
+                          let overlay = document.getElementById('w-nav-overlay-0');
+                          overlay.style.display = 'none';
+                          overlay.innerHTML = '';
+                      });
+                  });
+
                 } else {
-                    targetDiv.classList.remove('w--open');
-                    targetDiv.setAttribute('aria-expanded', 'false');
-                    let overlay = document.getElementById('w-nav-overlay-0');
-                    overlay.style.display = 'none';
-                }
+                  targetDiv.classList.remove('w--open');
+                  targetDiv.setAttribute('aria-expanded', 'false');
+                  let overlay = document.getElementById('w-nav-overlay-0');
+                  overlay.style.display = 'none';
+                  overlay.innerHTML = '';
+              }
                 // Rest of your code for mobile functionality (optional)
             } else {
                 // Handle case where targetDiv is not found
@@ -706,20 +718,13 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
       // Wait for the document to be fully loaded before accessing DOM elements
-      // Select all anchor tags with the class 'menu_link'
-      document.querySelectorAll('.menu_link').forEach(link => {
+      // Select all anchor tags
+      let test = document.getElementById('injected')
+      document.querySelectorAll('a').forEach(link => {
           // Add click event listener to each anchor tag
           link.addEventListener('click', () => {
-              // Get the overlay and targetDiv elements
-              let overlay = document.getElementById('w-nav-overlay-0');
-              let targetDiv = document.querySelector('.dsg-menu-button');
-              
-              // Hide overlay
-              overlay.style.display = 'none';
-
-              // Remove 'w--open' class and update aria-expanded attribute
-              targetDiv.classList.remove('w--open');
-              targetDiv.setAttribute('aria-expanded', 'false');
+              // Log "Hello" to the console
+              console.log("Hello");
           });
       });
   });
