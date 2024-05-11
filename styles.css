@@ -24,13 +24,14 @@ body {
 
 .card01 {
   background-image: url('images/img_forest.jpg');
-  background-size: cover; /* or contain depending on your preference */
+  background-size: 100% 100%; /* or contain depending on your preference */
+  overflow: hidden;
   background-position: center;
   backdrop-filter: blur(5px);
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Set default background color for menu links */
@@ -55,7 +56,7 @@ body {
   right: -100%;
   position: absolute;
   background: #1f3d4738;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(30px);
   border-radius: 1em;
   color: #fff;
   padding: 2.1em;
@@ -95,7 +96,10 @@ body {
 
 .card01.is-design {
   /* Your existing styles */
-  background-size: cover; /* Add this line to make the background image cover */
+  background-size: cover; 
+  background-image: 100% 100%;
+  overflow: hidden;
+  background-position: center;
 }
 .card-body h1 {
   
@@ -116,6 +120,7 @@ body {
   margin-right: 5px;  */
   margin-bottom: 10px; 
   color: black;
+  font-weight:490 ;
 }
 
 /* horizontal cards end */
@@ -124,17 +129,17 @@ body {
   position: relative;
   width: 100%;
   /* height: 300px; */
-  padding-top: 150%; 
+  padding-top: 110%; 
   /* 2:3 aspect ratio */
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   border-radius: 1em;
   overflow: hidden;
+
   /*
   flex: 1;
-  margin-right: 10px; 
-  max-width: 200px;  */
-  
+  margin-right: 10px; */
+  max-width: 270px;    
 }
 
 .two-three-card .card-body {
@@ -144,7 +149,7 @@ body {
   width: 100%;
   height: 100%;
   background: #1f3d4738;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(25px);
   border-radius: 1em;
   color: #fff;
   padding: 2.1em;
@@ -153,7 +158,7 @@ body {
   justify-content: center;
   z-index: 5;
   /* transition: right 1.5s ease; */
-
+ 
 
   /* padding: 1em;  */
 }
@@ -164,10 +169,11 @@ body {
 }
 
 .two-three-card .card-title {
+  font-size: 1.5em;
+  align-items: center;
   margin-top: -0px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 5px;
+  margin-bottom: .2em;
+  
   position: relative;
   z-index: 2;
 
@@ -176,11 +182,9 @@ body {
 }
 
 .two-three-card .card-subtitle {
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 5px;
-
-
+  /* margin-top: ; */
+  font-size: 1em;
+  font-weight:490 ;
   /* font-size: 1em; */
 }
 
@@ -194,24 +198,37 @@ body {
  */
 
  @media screen and (max-width: 479px) {
-  .w-layout-grid.grid--4-4-4 {
+  .w-layout-grid.grid--4-4-4{
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+    /*justify-content: center; */
   }
 
   .two-three-card {
     width: 100%;
-    margin-bottom: 20px; /* Optional: Add some spacing between the cards */
+    /* margin-bottom: 20px; Optional: Add some spacing between the cards */
+    /* margin:0% 3.5em;
+    height: 100%; */
+    align-self: center;
+    
   }
-/* 
-  .two-three-card .card-body {
+  .two-three-card .is-design{
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+   /* .two-three-card .card-body {
     width: auto; 
     height: auto; 
     padding: 1em; 
-  }
+  } 
   .two-three-card:hover .card-body {
     right: 0;
-  } */
+  }  */
 }
 
 
@@ -11515,10 +11532,12 @@ blockquote {
   }
 
   .about-img-right.is-2 {
-      width: 25em;
-      height: 25em;
+      /* display: flex; */
+      width: 20em;
+      height: 20em;
       background-position: 100% 0;
-      margin-right: 3em;
+      margin-right: auto;
+      /* align-self: center; */
   }
 
   .about-img-home {
@@ -11526,7 +11545,7 @@ blockquote {
       width: 25em;
       height: 25em;
       background-position: 100% 0;
-      margin-left: 4em;
+      margin-left: 1.25em;
   }
 
   .home_headline-wrap {
