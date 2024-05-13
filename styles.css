@@ -92,6 +92,7 @@ body {
   margin: 0 auto; /* Center the button horizontally*/
   text-align: center;
   padding: 0 auto;
+  border: 1px solid #fff;
 }
 
 .card01.is-design {
@@ -198,6 +199,8 @@ body {
  */
 
  @media screen and (max-width: 479px) {
+
+  
   .w-layout-grid.grid--4-4-4{
     display: flex;
     flex-direction: column;
@@ -739,7 +742,7 @@ html.w-mod-touch * {
   border-radius: 0;
   padding: 9px 15px;
   text-decoration: none;
-  display: inline-block
+  display: inline-block;
 }
 
 input.w-button {
@@ -2616,7 +2619,6 @@ textarea.w-input,textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2939,7 +2941,6 @@ blockquote {
   height: 1.3rem;
   background-color: #314cff;
   color: #181818;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/64653ddbdd2b114ca9c5d29e_check.svg);
   background-position: 50%;
   background-size: 99% 99%;
   border-style: none;
@@ -4352,7 +4353,6 @@ blockquote {
   background-color: #5689e9;
   box-shadow: none;
   color: #e5e5e5;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/649c58bb9b2e260368163f44_arrow-right.svg);
   background-position: 79%;
   background-repeat: no-repeat;
   background-size: 1.2rem 1.2rem;
@@ -4656,7 +4656,6 @@ blockquote {
 
 .form-input.is-select-input {
   color: #525252;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/646bee5d05fac5893c1607ce_arrow-down.svg);
   background-position: 95%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -4666,7 +4665,6 @@ blockquote {
 
 .form-input.is-select-input:hover {
   border-color: #5689e9;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/649ec28e56977b29f1e1b52b_arrow-down-active.svg)
 }
 
 .form-input.is-select-input:active {
@@ -5812,7 +5810,6 @@ blockquote {
 
 .cta-section {
   background-color: #dbdedd;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491cf9b25fa65258079e646_bg-element.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: auto 6em;
@@ -6756,7 +6753,6 @@ blockquote {
 }
 
 .projects_content.is-popup {
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491d46e52ac2b535a8e7caf_bg-element.svg);
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: auto
@@ -6779,7 +6775,6 @@ blockquote {
 .is-url-wrap {
   grid-column-gap: .4rem;
   background-color: #e5e5e5;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ccfdfc72deabe6de0d0e_rechts.svg),url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ccf501942a5e255b8d9d_links.svg);
   background-position: 100%,0%;
   background-repeat: no-repeat,no-repeat;
   background-size: contain,contain;
@@ -7836,7 +7831,6 @@ blockquote {
   height: 1.5em;
   opacity: .5;
   color: #44454d;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/647a0bc7bace24a992986e1d_left-default.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -7853,14 +7847,12 @@ blockquote {
 .ui-bar-icon-left:hover {
   opacity: 1;
   color: #5689e9;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491cdfe76458e2a86064604_left-hover.svg)
 }
 
 .ui-bar-icon-left.w--redirected-checked {
   z-index: 150;
   opacity: 1;
   cursor: pointer;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491cdfe76458e2a86064604_left-hover.svg);
   border-style: none;
   border-radius: 0%;
   margin-top: 0;
@@ -7881,7 +7873,6 @@ blockquote {
   height: 1.5em;
   opacity: .5;
   color: #44454d;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/647a0be3da1e6170785c405e_center-default.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -7903,13 +7894,10 @@ blockquote {
 .ui-bar-icon-center:hover {
   opacity: 1;
   color: #5689e9;
-  /* background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ce14bea49251a39a768a_center-hover.svg)
-*/
 }
 
 .ui-bar-icon-center.w--redirected-checked {
   opacity: 1;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ce14bea49251a39a768a_center-hover.svg);
   border-style: none;
   border-radius: 0%
 }
@@ -7929,7 +7917,6 @@ blockquote {
   height: 1.5em;
   opacity: .5;
   color: #44454d;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/647a0bee50cc3ac400ca9110_right-default.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -7951,12 +7938,10 @@ blockquote {
 .ui-bar-icon-right:hover {
   opacity: 1;
   color: #5689e9;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ce32c28f07cb87a4a6b0_right-hover.svg)
 }
 
 .ui-bar-icon-right.w--redirected-checked {
   opacity: 1;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6491ce32c28f07cb87a4a6b0_right-hover.svg);
   border-style: none;
   border-radius: 0%
 }
@@ -8098,7 +8083,6 @@ blockquote {
 
 .comment-form-input.is-select-input {
   color: #5689e9;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/646bee5d05fac5893c1607ce_arrow-down.svg);
   background-position: 95%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -8107,7 +8091,6 @@ blockquote {
 
 .comment-form-input.is-select-input:hover {
   border-color: #5689e9;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/646beea25cfd12b22890658d_arrow-down-active.svg)
 }
 
 .comment-form-input.is-select-input:active {
@@ -8697,7 +8680,6 @@ blockquote {
   z-index: 0;
   width: 11.5em;
   height: 8.9em;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/64ac347bfee2a9965811203f_about-img-hero.webp);
   background-position: 100% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8746,7 +8728,7 @@ blockquote {
 }
 
 .pattern-bg {
-  background-image: radial-gradient(circle closest-corner,rgba(255,255,255,0),#e5e5e5),url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/6486f6ed5b4d5580f7cfcd15_patter.svg);
+  background-image: radial-gradient(circle closest-corner,rgba(255,255,255,0),#e5e5e5),;
   background-position: 0 0,0 0;
   background-repeat: repeat,no-repeat;
   background-size: auto,cover;
@@ -9512,7 +9494,6 @@ blockquote {
   z-index: 2;
   width: 15em;
   height: 10em;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/64916298d9536cfdac458d4d_about-img-new.webp);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9524,7 +9505,6 @@ blockquote {
   height: 25em;
   /* margin-left: 10em; */
   /* margin-right: 3em; */
-  /* background-image: url("https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/649b56a88a7e1003684d93ec_about-img-2%20(1)%20(1).webp")*/
   background-image: url('images/avataaars\ \(4\).svg');
   background-color: #5689e9;
   border-radius: 50%;
@@ -9533,7 +9513,6 @@ blockquote {
 .about-img-left {
   width: 29em;
   height: 23em;
-  background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/64807ae8b8a3cdbd6ba268f3_storie-2%20\(1\).jpg);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9576,7 +9555,6 @@ blockquote {
   height: 30em; */
   width: 25em;
   height: 25em;
-  /* background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/64ac347bfee2a9965811203f_about-img-hero.webp); */
   background-image: url('images/avataaars\ \(4\).svg');
   background-position: 100% 0;
   background-repeat: no-repeat;
@@ -9589,7 +9567,6 @@ blockquote {
 }
 
 .about-img-home.is-2 {
-  /* background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/649b5fe4c48ee841ecd310d1_about-img-3%20\(1\).webp) */
   background-image: url('images/avataaars\ \(4\).svg');
 }
 
@@ -9815,6 +9792,8 @@ blockquote {
       width: 100%
   }
 
+
+
   .dsg-nav-link {
       flex-direction: column;
       align-items: center;
@@ -9844,7 +9823,7 @@ blockquote {
   }
 
   .content01_img.is-left,.content01_img.is-right,.btn-prm--med {
-      width: 100%
+      width: 100%;
   }
 
   .dsg-popup {
@@ -12606,7 +12585,6 @@ blockquote {
   }
 
   .tabs-nav-item._03.w--current {
-      background-image: url(https://assets-global.website-files.com/64653ddbdd2b114ca9c5d299/646bee5d05fac5893c1607ce_arrow-down.svg);
       background-position: 94%;
       background-repeat: no-repeat;
       background-size: auto;
